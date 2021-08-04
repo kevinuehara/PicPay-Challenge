@@ -1,3 +1,13 @@
+## Fluxo Desenvolvido:
+![flow-picpay](https://user-images.githubusercontent.com/20498649/128124054-869f4fb3-34df-43f2-badb-20e05c45e2a9.gif)
+
+### Feito:
+ - Desenvolvido todo o fluxo solicitado
+ - Mudanças no layout e estilo
+ - Teste e2e e unitários
+ - Componentização
+
+
 # Desafio Front-end PicPay
 
 Primeiramente, obrigado pelo seu interesse em trabalhar na melhor plataforma de pagamentos do mundo!
