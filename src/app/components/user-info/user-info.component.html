@@ -1,0 +1,19 @@
+<div class="user-content">
+  <div class="user">
+    <img [src]="avatarUrl" />
+    <div class="info-wrapper">
+      <div class="user-name">
+        {{ name }}
+      </div>
+
+      <div class="user-id-username">
+        <span
+          >Usuário: {{ username }} <br />
+          Identificador: {{ userId }}
+        </span>
+      </div>
+
+      <app-button id="btn-payment" (clickEvent)="openDialog()" label="Pagar"></app-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="modal">
+  <div class="header">
+    <div class="title">
+      <span class="payment-user-label"
+        >Pagamento para <span class="name">{{ name }}</span></span
+      >
+    </div>
+    <div class="close-icon" (click)="close()">
+      <mat-icon aria-hidden="false" aria-label="Close Dialog">close</mat-icon>
+    </div>
+  </div>
+
+  <div class="content">
+    <form [formGroup]="userForm">
+      <mat-form-field class="input-value">
+        <mat-label>Valor do Pagamento</mat-label>
+        <input
+          currencyMask
+          [options]="{
+            prefix: 'R$ ',
+            thousands: '.',
+            decimal: ',',
+            align: 'left'
+          }"
+          matNativeControl
+          formControlName="value"
+          matInput
+        />
+      </mat-form-field>
+
+      <mat-form-field class="input-value">
+        <mat-label>Cartões</mat-label>
+        <select matNativeControl formControlName="card">
+          <option *ngFor="let card of cards" [ngValue]="card">
+            Cartão com final
+            {{ card.card_number.substr(card.card_number.length - 4) }}
+          </option>
+        </select>
+      </mat-form-field>
+
+      <div class="pay-button">
+        <app-button [disabled]="userForm.invalid" (clickEvent)="sendTransaction()" label="Pagar"></app-button>
+      </div>
+    </form>
+  </div>
+</div>

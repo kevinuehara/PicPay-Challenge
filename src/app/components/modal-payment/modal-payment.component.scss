@@ -1,0 +1,57 @@
+::ng-deep.mat-dialog-container {
+    padding: 0 0 !important;
+}
+
+.modal > .header {
+  background: var(--picpay-color);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > .title > span > .name {
+    font-weight: bold;
+  }
+
+  & > .close-icon:hover {
+    cursor: pointer;
+  }
+}
+
+.modal > .content {
+  padding: 32px;
+}
+
+.modal > .content  {
+  & > form > .input-value {
+    margin-top: 10px;
+    width: 100%;
+  }
+  & input {
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  & select {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+.pay-button {
+  text-align: center;
+}
+
+.modal > .content button {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 32px;
+  height: 48px;
+  padding: 0 8px;
+  margin-top: 24px;
+}

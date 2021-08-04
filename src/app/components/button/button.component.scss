@@ -1,0 +1,25 @@
+.button:hover {
+  background-color: var(--picpay-color);
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 10px;
+  width: 140px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 2px solid var(--picpay-color);
+  color: var(--picpay-color);
+  font-weight: 700;
+}
+
+.button.disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}

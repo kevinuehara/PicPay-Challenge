@@ -1,0 +1,20 @@
+<div class="home-content">
+  <span class="description">
+    <p id="welcome-message" class="green space">Bem vindo!</p>
+    <span class="green">PicPay Manager</span> plataforma para simulação de envio
+    e transferência para outra pessoa.
+  </span>
+
+  <div class="users-container">
+    <section class="container grid grid-template-columns">
+      <app-user-info
+        *ngFor="let user of users"
+        [userId]="user.id"
+        [username]="user.username"
+        [name]="user.name"
+        [avatarUrl]="user.img"
+      >
+      </app-user-info>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="modal">
+  <div class="header" [ngClass]="isSentTransaction == true ? 'success' : 'error'">
+    <div class="title">
+      <span class="title">Recibo de pagamento</span>
+    </div>
+    <div class="close-icon" (click)="close()">
+      <mat-icon aria-hidden="false" aria-label="Close Dialog">close</mat-icon>
+    </div>
+  </div>
+
+  <div class="content">
+    <span *ngIf="isSentTransaction"
+        >O pagamento foi concluido com sucesso.</span
+      >
+      <span *ngIf="!isSentTransaction"
+        >O pagamento <strong>não</strong> foi concluido com sucesso.</span
+      >
+  </div>
+</div>
