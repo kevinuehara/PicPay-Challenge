@@ -4,7 +4,8 @@
 ### Feito:
  - Desenvolvido todo o fluxo solicitado
  - Mudanças no layout e estilo
- - Teste e2e e unitários
+ - Testes e2e e unitários
+ - Consumo das API's
  - Componentização
 
 
